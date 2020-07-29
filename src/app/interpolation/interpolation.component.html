@@ -1,0 +1,20 @@
+<!-- <p>interpolation works!</p>
+{{ firstName | lowercase }}
+
+<img src="{{imagepath}}"/>
+{{isDisabled}}
+<input type="text" disabled="{{isDisabled}}">
+<input type="text" [disabled]="isDisabled"> -->
+
+<!-- 
+<div [class]="styleVariable">Class Binding</div>
+
+<div [class.redtext]="isRedText">Class Binding</div>
+
+<div [ngClass]='{"boldtext": isBoldText, "redtext": isRedText}'>Ng Classtext</div> -->
+
+<!-- <input type="text" (change)="inputChange()"> -->
+
+
+<input type="text" [(ngModel)]="firstName">
+{{firstName }}
