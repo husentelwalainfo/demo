@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { CreditCardOfferAvailableDirective } from './credit-card-offer-available.directive';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+import { AngularDirectiveComponent } from './angular-directive/angular-directive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
     ContactUsComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    CreditCardOfferAvailableDirective,
+    CustomDirectiveComponent,
+    AngularDirectiveComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+<!-- <button (click)="isVisible=!isVisible">Toggle the Content</button>
+<div *ngIf="isVisible">
+    Conditional show/hide the content
+</div> -->
+
+<!-- <div [ngSwitch]="currentDay">
+    <div *ngSwitchCase="'0'">Sunday</div>
+    <div *ngSwitchCase="'1'">Mon</div>
+    <div *ngSwitchCase="'2'">Tue</div>
+    <div *ngSwitchCase="'3'">Wed</div>
+    <div *ngSwitchCase="'4'">Thur</div>
+    <div *ngSwitchCase="'5'">Fri</div>
+    <div *ngSwitchCase="'6'">Sat</div>
+</div>
+
+ -->
+<!-- 
+ {{days | json }}
+
+ <div *ngFor="let day of days">
+     {{day}}
+ </div> -->
+
+
+ <!-- {{currentDay}}
+
+ <div [ngSwitch]="currentDay">
+    <div *ngFor="let day of days"><span *ngSwitchCase="day.dayNo">{{day.dayName}}</span></div>
+</div> -->
+
+<ul class="tab">
+    <li (click)="selectedTab=1">Tab 1</li>
+    <li (click)="selectedTab=2">Tab 2</li>
+    <li (click)="selectedTab=3">Tab 3</li>
+</ul>
+<div class="tab-content">
+<div *ngIf="selectedTab==1">
+    Tab 1 Content
+</div>
+<div *ngIf="selectedTab==2">
+    Tab 2 Content
+</div>
+<div *ngIf="selectedTab==3">
+    Tab 3 Content
+</div>
+</div>
