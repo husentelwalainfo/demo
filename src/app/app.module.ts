@@ -9,6 +9,9 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { CreditCardOfferAvailableDirective } from './credit-card-offer-available.directive';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 import { AngularDirectiveComponent } from './angular-directive/angular-directive.component';
+import { EmployeeListingComponent } from './employee-listing/employee-listing.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeDataService } from './employee-data.service';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { AngularDirectiveComponent } from './angular-directive/angular-directive
     CreditCardOfferAvailableDirective,
     CustomDirectiveComponent,
     AngularDirectiveComponent,
+    EmployeeListingComponent,
+    EmployeeDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
