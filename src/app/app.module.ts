@@ -12,7 +12,9 @@ import { AngularDirectiveComponent } from './angular-directive/angular-directive
 import { EmployeeListingComponent } from './employee-listing/employee-listing.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeDataService } from './employee-data.service';
-
+import { EmployeeListingUsingHttpComponent } from './employee-listing-using-http/employee-listing-using-http.component';
+import { EmployeeDetailsUsingHttpComponent } from './employee-details-using-http/employee-details-using-http.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +26,14 @@ import { EmployeeDataService } from './employee-data.service';
     AngularDirectiveComponent,
     EmployeeListingComponent,
     EmployeeDetailsComponent,
+    EmployeeListingUsingHttpComponent,
+    EmployeeDetailsUsingHttpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [EmployeeDataService],
   bootstrap: [AppComponent]
