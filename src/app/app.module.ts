@@ -15,6 +15,9 @@ import { EmployeeDataService } from './employee-data.service';
 import { EmployeeListingUsingHttpComponent } from './employee-listing-using-http/employee-listing-using-http.component';
 import { EmployeeDetailsUsingHttpComponent } from './employee-details-using-http/employee-details-using-http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LayoutComponent } from './layout/layout.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SingleEmployeeDetailsComponent } from './single-employee-details/single-employee-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
     EmployeeDetailsComponent,
     EmployeeListingUsingHttpComponent,
     EmployeeDetailsUsingHttpComponent,
+    LayoutComponent,
+    PageNotFoundComponent,
+    SingleEmployeeDetailsComponent,
   ],
   imports: [
     BrowserModule,

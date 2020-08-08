@@ -1,0 +1,7 @@
+header, footer { padding: 15px; background-color: #CCC;}
+ul li { display: inline-block}
+li a { padding: 15px; display: block; border: 1px solid #000; color:#000 }
+ul { margin: 0; padding:0 ;}
+footer { position: fixed; width:100%; bottom:0; }
+section { padding: 30px; }
+li a.activelink { background-color: white;}
