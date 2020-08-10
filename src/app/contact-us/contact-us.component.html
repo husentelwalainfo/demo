@@ -1,1 +1,9 @@
-<p>contact-us works!</p>
+<h2>Contact us</h2>
+
+<button (click)="showcontact=true">Show Contact</button>
+<button (click)="showcontact=false">Hide Contact</button>
+
+<div *ngIf="showcontact" class="content" @fadeeffect> 
+    Content Lorem ipsum doler amet dumm content Content Lorem ipsum doler amet dumm contentContent Lorem ipsum doler amet dumm contentContent Lorem ipsum doler amet dumm contentContent Lorem ipsum doler amet dumm contentContent Lorem ipsum doler amet dumm content
+    Content Lorem ipsum doler amet dumm content
+</div>

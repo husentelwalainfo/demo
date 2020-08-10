@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeDataUsingHttpService } from '../employee-data-using-http.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-single-employee-details',
@@ -10,11 +10,24 @@ import { ActivatedRoute } from '@angular/router';
 export class SingleEmployeeDetailsComponent implements OnInit {
   public employeeid;
   public employees = []
-  constructor(private employeeService: EmployeeDataUsingHttpService, private activatedRoute: ActivatedRoute) { }
+  constructor(private employeeService: EmployeeDataUsingHttpService, private activatedroute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.employeeService.getEmployees().subscribe(data=>this.employees=data);
-    this.employeeid = this.activatedRoute.snapshot.paramMap.get('id');
+    //this.employeeid = parseInt(this.activatedroute.snapshot.paramMap.get('id'));
+    //console.log('on init');
+    this.activatedroute.paramMap.subscribe((params:ParamMap)=> {
+      this.employeeid = parseInt(params.get('id'));
+      console.log('param map');
+    })
+  }
+
+  next() {
+    this.router.navigate(['../', this.employeeid + 1], {relativeTo: this.activatedroute})
+  }
+
+  previous() {
+    this.router.navigate(['../', this.employeeid - 1], {relativeTo: this.activatedroute})
   }
 
 }

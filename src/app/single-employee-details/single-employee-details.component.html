@@ -1,5 +1,10 @@
 <h2>employee-details</h2>
 {{ employees[employeeid-1] | json }}
+
+<br>
+<button (click)="next()">Next Employee</button>
+<button (click)="previous()">Previous Employee</button>
+
 <!-- <ul>
     <li *ngFor="let employee of employees">
         Name: {{employee.employee_name}} | Age: {{employee.age}} | Gender: {{employee.gender}} 

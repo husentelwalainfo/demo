@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LayoutComponent } from './layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SingleEmployeeDetailsComponent } from './single-employee-details/single-employee-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { SingleEmployeeDetailsComponent } from './single-employee-details/single
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [EmployeeDataService],
   bootstrap: [AppComponent]
