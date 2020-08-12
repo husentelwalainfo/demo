@@ -18,7 +18,6 @@ export class SingleEmployeeDetailsComponent implements OnInit {
     //console.log('on init');
     this.activatedroute.paramMap.subscribe((params:ParamMap)=> {
       this.employeeid = parseInt(params.get('id'));
-      console.log('param map');
     })
   }
 

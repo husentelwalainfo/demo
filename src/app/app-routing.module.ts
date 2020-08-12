@@ -6,6 +6,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SingleEmployeeDetailsComponent } from './single-employee-details/single-employee-details.component';
 import { AuthGuard } from './auth.guard';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/employee-listing', pathMatch:'full'},
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path:'employee-listing/:id', component: SingleEmployeeDetailsComponent },
   { path:'employeedetails', component: EmployeeDetailsUsingHttpComponent },
   { path:'contactus', component: ContactUsComponent}, 
+  { path:'templatedrivenform', component: TemplateDrivenFormComponent},
+  { path:'reactiveform', component: ReactiveFormComponent},
   { path:'**', component: PageNotFoundComponent},
 ];
 

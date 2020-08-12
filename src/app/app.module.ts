@@ -19,6 +19,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SingleEmployeeDetailsComponent } from './single-employee-details/single-employee-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,13 +38,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LayoutComponent,
     PageNotFoundComponent,
     SingleEmployeeDetailsComponent,
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [EmployeeDataService],
   bootstrap: [AppComponent]
