@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TstComponent } from './tst/tst.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SingleEmployeeDetailsComponent,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
+    TstComponent,
   ],
   imports: [
     BrowserModule,
